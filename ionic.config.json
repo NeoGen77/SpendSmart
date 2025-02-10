@@ -1,0 +1,7 @@
+{
+  "name": "spendsmart",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
