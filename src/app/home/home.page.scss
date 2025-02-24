@@ -25,3 +25,49 @@
 #container a {
   text-decoration: none;
 }
+ion-content {
+  --background: #0f1425;
+}
+
+ion-card {
+  margin: 16px;
+  text-align: center;
+}
+
+ion-button {
+  margin-top: 16px;
+}
+
+ion-list {
+  background: transparent;
+}
+.solde-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+  border-radius: 50%; /* Pour rendre le card rond */
+  background-color: #3880ff; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  height: 100px; /* Hauteur du rond */
+  width: 100px; /* Largeur du rond */
+}
+
+.solde-container {
+  text-align: center;
+  /* home.page.scss */
+.reset-button {
+  background-color: #ff4757; /* Red background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for size */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.reset-button:hover {
+  background-color: #e84118; /* Darker red on hover */
+}
+}

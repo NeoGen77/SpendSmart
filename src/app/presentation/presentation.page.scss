@@ -1,0 +1,23 @@
+ion-content {
+    background-image: url('/assets/images/logo.jpg'); /* Chemin vers l'image */ 
+    background-size: cover; /* Couvre tout l'arrière-plan */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    height: 100%; /* Assure que le contenu prend toute la hauteur */
+  }
+  
+  ion-card {
+    margin: 16px; /* Marge autour des cartes */
+    border-radius: 10px; /* Coins arrondis pour les cartes */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour les cartes */
+    background-color: rgba(28, 30, 60, 0.8); /* Fond blanc avec transparence pour les cartes */
+  }
+  .presentation-image {
+    width: 20%; /* Prend toute la largeur de la carte */
+    height: auto; /* Garde les proportions de l'image */
+    border-radius: 10px; /* Coins arrondis pour les images */
+    margin-top: 10px; /* Marge au-dessus de l'image */
+  }
+  ion-content {
+    --background: #040823;
+  }

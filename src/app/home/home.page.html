@@ -1,20 +1,68 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      SpendSmart
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="navigateToDetails()">Modifier le solde</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <ion-card class="solde-card">
+    <ion-card-content>
+      <div class="solde-container">
+        <h2>{{ soldeRestant }} fcfa</h2>
+      </div>
+    </ion-card-content>
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-button (click)="actualiserSolde()" expand="full">Actualiser les données</ion-button>
+
+  <!-- Ajouter une dépense -->
+  <ion-item>
+    <ion-label position="floating">Montant de la dépense </ion-label>
+    <ion-input type="number" [(ngModel)]="montantDepense"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Description</ion-label>
+    <ion-input [(ngModel)]="descriptionDepense"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="ajouterDepense()">Ajouter la dépense</ion-button>
+
+  <!-- Afficher le solde restant -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Solde restant</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>{{ soldeRestant }} </h2>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Projection du solde</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #projectionChart></canvas>
+    </ion-card-content>
+  </ion-card>
+
+<!-- home.page.html -->
+<ion-button class="reset-button" (click)="reinitialiserSolde()">Réinitialiser le solde et les dépenses</ion-button>  <!-- Liste des dépenses -->
+  <ion-list>
+    <ion-item *ngFor="let depense of depenses">
+      <ion-label>
+        <h2>{{ depense.description }}</h2>
+        <p>{{ depense.montant }}  - {{ depense.date }} à {{ depense.time }}</p>
+      </ion-label>
+    </ion-item>
+    
+  </ion-list>
+<!-- home.page.html -->
+  
+  <ion-button expand="full" (click)="navigateToPresentation()">À propos de l'application</ion-button>
+
 </ion-content>

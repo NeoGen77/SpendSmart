@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Présentation</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>À propos de l'école</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Bienvenue à [ESTA], un lieu d'apprentissage et de croissance.</p>
+      <p>Nous nous engageons à fournir une éducation de qualité et à encourager nos élèves à atteindre leur plein potentiel.</p>
+      <img src="assets/images/logo.jpg" alt="Image de moi" class="presentation-image">
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>À propos de moi</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Je suis Dao Aboubakar Junior, un passionné de technologie et de gestion financière.</p>
+      <p>Mon objectif est d'aider les gens à mieux gérer leurs finances grâce à des outils simples et efficaces.</p>
+      <img src="assets/images/moi2.jpg" alt="Image de moi" class="presentation-image">
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>But de l'application</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>SpendSmart a été conçu pour aider les utilisateurs à suivre leurs dépenses et à gérer leur budget de manière efficace.</p>
+      <p>Avec cette application, vous pouvez facilement enregistrer vos dépenses, visualiser votre solde restant, et prendre des décisions financières éclairées.</p>
+      <img src="assets/images/spendlogo.jpg" alt="Image de moi" class="presentation-image">
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-img *ngIf="photo" [src]="photo"></ion-img>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
