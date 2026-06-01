@@ -47,19 +47,7 @@ cd SpendSmart
 4. **View Analytics**: Check dashboards for spending summaries and trends
 5. **Review Projections**: See forecasted spending based on historical data
 
-### Example
-
 ```
-[Add a code snippet or workflow example if applicable]
-```
-
-## 🛠️ Technologies Used
-
-- **Frontend**: [e.g., React Native / Flutter]
-- **Backend**: [e.g., Node.js / Django]
-- **Database**: [e.g., Firebase / PostgreSQL]
-- **Analytics**: [e.g., Chart.js / Plotly]
-- **Authentication**: [e.g., JWT / Firebase Auth]
 
 ## 📋 Project Structure
 
@@ -99,7 +87,7 @@ Please ensure your code follows our style guidelines and includes tests where ap
 
 ## 📝 License
 
-This project is licensed under the [Your License] License - see the LICENSE file for details.
+This project is licensed under the License - see the LICENSE file for details.
 
 ## 👥 Author
 
@@ -114,8 +102,6 @@ Have questions or suggestions? Feel free to:
 
 ## 🙏 Acknowledgments
 
-- Thanks to [any libraries, tools, or people you want to acknowledge]
+- Thanks to [any libraries, tools, or people who have contributed]
 
 ---
-
-**Note**: This is a template. Please customize the sections above with your specific project details, installation instructions, and technology stack.
